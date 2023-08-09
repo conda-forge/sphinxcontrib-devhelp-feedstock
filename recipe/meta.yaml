@@ -5,7 +5,7 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/s/sphinxcontrib-devhelp/sphinxcontrib-devhelp-{{ version }}.tar.gz
+  url: https://pypi.io/packages/source/s/sphinxcontrib-devhelp/sphinxcontrib_devhelp-{{ version }}.tar.gz
   sha256: ced21e99bceed8694117b8361b67df624d8788309399f24bd948a254e64cc017
 
 build:
