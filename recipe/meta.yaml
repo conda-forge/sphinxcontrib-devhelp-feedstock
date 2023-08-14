@@ -1,4 +1,4 @@
-{% set version = "1.0.4" %}
+{% set version = "1.0.5" %}
 
 package:
   name: sphinxcontrib-devhelp
@@ -6,7 +6,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/s/sphinxcontrib-devhelp/sphinxcontrib_devhelp-{{ version }}.tar.gz
-  sha256: 4fd751c63dc40895ac8740948f26bf1a3c87e4e441cc008672abd1cb2bc8a3d1
+  sha256: 63b41e0d38207ca40ebbeabcf4d8e51f76c03e78cd61abe118cf4435c73d4212
 
 build:
   number: 0
