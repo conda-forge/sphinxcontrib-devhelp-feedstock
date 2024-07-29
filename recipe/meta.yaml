@@ -11,8 +11,8 @@ source:
 build:
   number: 0
   noarch: python
-  script: {{ PYTHON }} -m pip install . -vv
-
+  script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
+  
 requirements:
   host:
     - python >=3.9
@@ -35,7 +35,7 @@ about:
   home: https://www.sphinx-doc.org/
   license: BSD-2-Clause
   license_family: BSD
-  license_file: LICENSE
+  license_file: LICENCE.rst
   summary: sphinxcontrib-devhelp is a sphinx extension which outputs Devhelp document
   doc_url: https://www.sphinx-doc.org/en/master/
   dev_url: https://github.com/sphinx-doc/sphinxcontrib-devhelp
