@@ -5,21 +5,21 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/s/sphinxcontrib-devhelp/sphinxcontrib_devhelp-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/s/sphinxcontrib-devhelp/sphinxcontrib_devhelp-{{ version }}.tar.gz
   sha256: 411f5d96d445d1d73bb5d52133377b4248ec79db5c793ce7dbe59e074b4dd1ad
 
 build:
-  number: 0
+  number: 1
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
   
 requirements:
   host:
-    - python >=3.9
+    - python {{ python_min }}
     - pip
     - flit-core >=3.7
   run:
-    - python >=3.9
+    - python >={{ python_min }}
     - sphinx >=5
 
 test:
@@ -28,6 +28,7 @@ test:
     - sphinxcontrib.devhelp
   requires:
     - pip
+    - python {{ python_min }}
   commands:
     - pip check
 
